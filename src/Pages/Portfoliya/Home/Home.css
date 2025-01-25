@@ -1,0 +1,56 @@
+.home-wrapper {
+  width: 70%;
+  position: relative;
+  margin-left: 30%;
+}
+.home-container {
+  background-image: url("./hero-user.jpg");
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+}
+.title {
+  position: absolute;
+  top: 40%;
+  transform: translateY(50%);
+  color: white;
+  left: 30px;
+}
+.title h1 {
+  font-size: 58px;
+  font-weight: 700;
+}
+.text {
+  line-height: 2.5rem;
+  gap: 10px;
+  font-size: 30px;
+  display: flex;
+}
+
+/* About */
+.home-about {
+  padding: 60px 10px;
+}
+.about-title {
+  font-size: 32px;
+  position: relative;
+}
+.about-title h1::before {
+  content: "";
+  bottom: -20px;
+  width: 10%;
+  height: 4px;
+  background-color: #149ddd;
+  position: absolute;
+}
+.home-text {
+  margin-top: 35px;
+  color: #272829;
+  line-height: 25px;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  font-weight: 500;
+}

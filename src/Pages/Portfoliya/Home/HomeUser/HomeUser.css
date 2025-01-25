@@ -1,0 +1,22 @@
+.home-user-container {
+  margin: 45px 0;
+}
+.home-user {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.home-user img {
+  width: 30%;
+}
+.user-data > p {
+  line-height: 25px;
+  margin: 20px 0;
+  font-style: italic;
+  color: #272829;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+}

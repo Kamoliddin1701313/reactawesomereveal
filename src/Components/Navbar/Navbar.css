@@ -1,0 +1,77 @@
+.navbar-container {
+  height: 50px;
+  background-color: #023b6d;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  z-index: 999;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.action-icon {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 20px;
+  cursor: pointer;
+  color: white;
+  font-weight: 700;
+}
+
+.action-icon .action-icon-download .download {
+  font-size: 26px;
+}
+.pagination {
+  width: 120px;
+}
+.action-icon-download {
+  display: flex;
+  align-items: center;
+  background-color: #00a6eb;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 100%;
+  gap: 10px;
+  text-transform: uppercase;
+}
+.pagination .link {
+  text-decoration: none;
+}
+.pagination span {
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.icons {
+  color: rgba(255, 255, 255, 0.367);
+  font-size: 23px;
+  font-weight: 900;
+}
+/* .navbar-icons > :nth-of-type(2) .icons {
+  font-size: 28px;
+} */
+/* .navbar-icons > :nth-of-type(4) .icons {
+  height: 24px;
+} */
+.active {
+  color: white;
+}
+
+.navbarlogo {
+  width: 200px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
