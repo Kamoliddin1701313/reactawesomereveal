@@ -2,6 +2,8 @@ import React from "react";
 import "./Home.css";
 import herouser from "./hero-user.jpg";
 import HomeUser from "./HomeUser/HomeUser";
+import Skills from "../Skills/Skills";
+import Resume from "../Resume/Resume";
 
 function Home() {
   return (
@@ -27,6 +29,8 @@ function Home() {
           fugiat sit in iste officiis commodi quidem hic quas.
         </p>
         <HomeUser />
+        <Skills />
+        <Resume />
       </div>
     </div>
   );

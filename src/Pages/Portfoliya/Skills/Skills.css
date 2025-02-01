@@ -1,0 +1,39 @@
+.skills {
+  background-color: #f4fafd;
+  padding: 60px 0;
+}
+.skills h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.skills > p:first-of-type {
+  width: 5%;
+  height: 3px;
+  background-color: #149ddd;
+}
+
+.skills-card {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+}
+
+.skills p:nth-of-type(2) {
+  margin: 20px 0;
+  line-height: 22px;
+}
+
+.line-width {
+  height: 10px;
+  position: relative;
+
+  background-color: rgba(201, 201, 201, 0.596);
+}
+
+.skills-framework {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

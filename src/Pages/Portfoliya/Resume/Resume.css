@@ -1,0 +1,18 @@
+.resume {
+  padding: 60px 0;
+}
+.resume h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.resume > p:first-of-type {
+  width: 5%;
+  height: 3px;
+  background-color: #149ddd;
+}
+
+.resume > p:nth-of-type(2) {
+  margin: 20px 0;
+  line-height: 24px;
+}
