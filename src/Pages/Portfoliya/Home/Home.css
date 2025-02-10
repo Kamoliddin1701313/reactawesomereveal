@@ -11,6 +11,7 @@
   position: relative;
   background-repeat: no-repeat;
 }
+
 .title {
   position: absolute;
   top: 40%;
@@ -31,10 +32,12 @@
 
 /* About */
 .home-about {
-  padding: 60px 10px;
+  padding: 60px 0;
 }
+
 .about-title {
   font-size: 32px;
+  padding: 0 30px;
   position: relative;
 }
 .about-title h1::before {
@@ -52,5 +55,6 @@
   font-size: 17px;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 1px;
+  padding: 0 30px;
   font-weight: 500;
 }

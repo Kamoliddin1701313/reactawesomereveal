@@ -14,8 +14,8 @@ function Resume() {
       title1: "Portland par 127,Orlando, FL",
       title2: "(123) 456-7891",
       title3: "alice.barkley@example.com",
-      title4: "",
     },
+
     {
       id: 2,
       skillsName: "Professional Experience",
@@ -31,38 +31,40 @@ function Resume() {
       title4:
         "Oversee the efficient use of production project budgets ranging from $2,000 - $25,000",
     },
+
     {
       id: 3,
       skillsName: "Education",
       name: "Master of Fine Arts & Graphic Design",
       data: "2015 - 2016",
-      description: "Rochester Institute of Technology, Rochester, NY  ",
-      title1: "",
-      title2: "",
-      title3: "",
-      title4: "",
+      description:
+        "Rochester Institute of Technology, Rochester, NY  Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend",
     },
+
     {
       id: 4,
       skillsName: "",
-      name: "",
-      data: "",
-      description: "",
-      title1: "",
-      title2: "",
-      title3: "",
-      title4: "",
+      name: "Graphic design specialist",
+      data: "2017 - 2018",
+      description: "Stepping Stone Advertising, New York, NY",
+      title1:
+        "Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).",
+      title2:
+        "Managed up to 5 projects or tasks at a given time while under pressure",
+      title3:
+        "Recommended and consulted with clients on the most appropriate graphic design",
+      title4:
+        "Created 4+ design presentations and proposals a month for clients and account managers",
     },
+
     {
       id: 5,
       skillsName: "",
-      name: "",
-      data: "",
-      description: "",
-      title1: "",
-      title2: "",
-      title3: "",
-      title4: "",
+      name: "Bachelor of Fine Arts & Graphic Design",
+      data: "2010 - 2014",
+      description: "Rochester Institute of Technology, Rochester, NY",
+      title1:
+        "Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila",
     },
   ];
 
@@ -76,6 +78,25 @@ function Resume() {
         quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
         sit in iste officiis commodi quidem hic quas.
       </p>
+      <div>
+        <div className="wrapper">
+          {resume?.map((value, index) => (
+            <div key={index}>
+              <h2>{value.skillsName}</h2>
+              <h3>{value.name}</h3>
+              <span>{value.data && value.data}</span>
+              <em>{value.description && value.description}</em>
+              <ul>{value.title1 && <li>{value.title1}</li>}</ul>
+
+              <ul>{value.title2 && <li>{value.title2}</li>}</ul>
+
+              <ul>{value.title3 && <li>{value.title3}</li>}</ul>
+
+              <ul>{value.title4 && <li>{value.title4}</li>}</ul>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

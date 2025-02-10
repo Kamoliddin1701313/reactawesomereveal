@@ -124,6 +124,7 @@ function HomeUser() {
       >
         {counterData?.map((value, index) => (
           <div
+            key={index}
             style={{
               display: "flex",
               alignItems: "flex-start",

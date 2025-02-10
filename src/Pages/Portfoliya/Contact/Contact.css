@@ -1,0 +1,129 @@
+.contact {
+  padding: 50px 30px;
+  background-color: white;
+}
+
+.contact h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.contact > p:first-of-type {
+  width: 5%;
+  height: 3px;
+  background-color: #149ddd;
+}
+
+.contact > p:nth-of-type(2) {
+  margin: 20px 0;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 28px;
+}
+
+.contact-card {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 50px;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.location {
+  width: 40%;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 45px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.submit {
+  width: 60%;
+  padding: 30px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.location-cards {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  align-items: center;
+}
+
+.location-cards h3 {
+  padding: 0;
+  margin-bottom: 5px;
+  color: #050d18;
+}
+
+.location-cards p {
+  color: #272829;
+  line-height: 22px;
+}
+
+.box {
+  background-color: rgba(181, 219, 238, 0.368);
+  border-radius: 50%;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 35px;
+}
+
+.form-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.input-card {
+  width: 100%;
+}
+
+input,
+textarea {
+  padding: 0 15px;
+  border: 1px solid gray;
+  outline: none;
+  height: 48px;
+  resize: none;
+  display: inline-block;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: gray;
+  width: 100% !important;
+}
+label {
+  margin-bottom: 12px;
+  font-size: 20px;
+  display: block;
+}
+
+.send-message {
+  display: block;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  margin: 0 auto;
+  height: 48px;
+  background: #149ddd;
+  border-radius: 25px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding: 0 25px;
+  letter-spacing: 2px;
+  border: none;
+}
+
+.send-message:hover {
+  background-color: #49acda;
+  transition: all 0.4s ease-in-out;
+}
