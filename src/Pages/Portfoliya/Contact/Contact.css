@@ -12,6 +12,7 @@
 .contact > p:first-of-type {
   width: 5%;
   height: 3px;
+  margin-bottom: 20px;
   background-color: #149ddd;
 }
 

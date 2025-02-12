@@ -6,6 +6,16 @@ import user2 from "./user2.jpg";
 import user3 from "./user3.jpg";
 import user4 from "./user4.jpg";
 import user5 from "./user5.jpg";
+import {
+  Slide,
+  Zoom,
+  Fade,
+  Bounce,
+  Flip,
+  Roll,
+  JackInTheBox,
+  Hinge,
+} from "react-awesome-reveal";
 
 function Testimonials() {
   var settings = {

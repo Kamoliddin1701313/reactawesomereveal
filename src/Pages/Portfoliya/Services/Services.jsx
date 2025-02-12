@@ -9,6 +9,17 @@ import {
   BsCalendar4Week,
 } from "react-icons/bs";
 
+import {
+  Slide,
+  Zoom,
+  Fade,
+  Bounce,
+  Flip,
+  Roll,
+  JackInTheBox,
+  Hinge,
+} from "react-awesome-reveal";
+
 function Services() {
   const services = [
     {
@@ -53,29 +64,37 @@ function Services() {
 
   return (
     <div className="services">
-      <h1>Services</h1>
+      <Fade cascade triggerOnce direction="up">
+        <h1>Services</h1>
+      </Fade>
 
-      <p></p>
+      <Fade cascade triggerOnce direction="up">
+        <p></p>
+      </Fade>
 
-      <p>
-        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-        aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-        quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
-        sit in iste officiis commodi quidem hic quas.
-      </p>
+      <Fade cascade triggerOnce direction="up">
+        <p>
+          Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+          aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+          quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+          fugiat sit in iste officiis commodi quidem hic quas.
+        </p>
+      </Fade>
 
       <div className="services-card">
         {services?.map((item, index) => (
-          <div key={index} className="card">
-            <div className="icon">
-              <span>{item?.icon}</span>
-            </div>
+          <Fade cascade triggerOnce direction="up">
+            <div key={index} className="card">
+              <div className="icon">
+                <span>{item?.icon}</span>
+              </div>
 
-            <div className="contents">
-              <h2>{item.title}</h2>
-              <h4>{item.text}</h4>
+              <div className="contents">
+                <h2>{item.title}</h2>
+                <h4>{item.text}</h4>
+              </div>
             </div>
-          </div>
+          </Fade>
         ))}
       </div>
     </div>

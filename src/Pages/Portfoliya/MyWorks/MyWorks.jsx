@@ -14,6 +14,16 @@ import app11 from "../portfoliyaData/app-11.jpg";
 import app12 from "../portfoliyaData/app-12.jpg";
 import { TbZoomIn } from "react-icons/tb";
 import { FaLink } from "react-icons/fa6";
+import {
+  Slide,
+  Zoom,
+  Fade,
+  Bounce,
+  Flip,
+  Roll,
+  JackInTheBox,
+  Hinge,
+} from "react-awesome-reveal";
 
 function MyWorks() {
   const myworks = [
@@ -63,24 +73,28 @@ function MyWorks() {
         ))}
       </div>
 
-      <div className="products">
-        {filteredWorks.map((value) => (
-          <div className="cards" key={value.id}>
-            <div className="default-bgColor"></div>
-            <p>{value.title}</p>
-            <img src={value.img} alt={value.title} />
-            <div className="icon-container">
-              <span>
-                <TbZoomIn />
-              </span>
-              <span>
-                <FaLink />
-              </span>
-            </div>
-            <h3>Lorem ipsum, dolor sit amet consectetur</h3>
-          </div>
-        ))}
-      </div>
+      <Fade direction="up" cascade triggerOnce duration={2000}>
+        <div className="products">
+          {filteredWorks.map((value) => (
+            <Zoom cascade triggerOnce>
+              <div className="cards" key={value.id}>
+                <div className="default-bgColor"></div>
+                <p>{value.title}</p>
+                <img src={value.img} alt={value.title} />
+                <div className="icon-container">
+                  <span>
+                    <TbZoomIn />
+                  </span>
+                  <span>
+                    <FaLink />
+                  </span>
+                </div>
+                <h3>Lorem ipsum, dolor sit amet consectetur</h3>
+              </div>
+            </Zoom>
+          ))}
+        </div>
+      </Fade>
     </div>
   );
 }

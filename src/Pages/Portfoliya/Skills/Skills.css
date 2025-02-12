@@ -2,6 +2,7 @@
   background-color: #f4fafd;
   padding: 60px 30px;
 }
+
 .skills h1 {
   font-size: 32px;
   font-weight: 700;
@@ -16,6 +17,7 @@
 .skills-card {
   display: grid;
   width: 100%;
+  overflow: hidden;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 30px;
 }
@@ -28,7 +30,6 @@
 .line-width {
   height: 10px;
   position: relative;
-
   background-color: rgba(201, 201, 201, 0.596);
 }
 
